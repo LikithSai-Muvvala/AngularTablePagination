@@ -23,7 +23,7 @@ export class AppComponent implements OnInit {
   }
 
   getDataFromServer() {
-    for (let idx = 0; idx < 50; idx++) {
+    for (let idx = 0; idx < 100000; idx++) {
       let rowObj = {
         id: idx + 1,
         name: `Name ${idx + 1}`

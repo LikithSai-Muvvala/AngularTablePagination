@@ -1,4 +1,4 @@
-<section class="container my-3">
+<section class="container my-2">
 	<div class="row justify-content-center">
 		<label for="filter" class="mr-2 my-auto font-weight-bold font">
       Filter:
@@ -21,14 +21,14 @@
 			<table class="table table-striped table-bordered">
 				<thead class="bg-primary text-white text-center">
 					<tr>
-						<th *ngFor="let colName of columns">{{colName | uppercase }}</th>
+						<th class="p-2" *ngFor="let colName of columns">{{colName | uppercase }}</th>
 					</tr>
 				</thead>
 				<tbody>
 					<ng-container *ngIf="pageObj?.pageItems?.length > 0">
 						<tr *ngFor="let row of pageObj?.pageItems">
-							<td>{{row?.id}}</td>
-							<td>{{row?.name}}</td>
+							<td class="p-1">{{row?.id}}</td>
+							<td class="p-1">{{row?.name}}</td>
 						</tr>
 					</ng-container>
 					<ng-container *ngIf="pageObj?.pageItems?.length <= 0">
